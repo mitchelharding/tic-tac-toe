@@ -9,10 +9,10 @@ function Player(turn, square){
 }
 
 Player.prototype.turn = function(){
-  if (("input:checkbox[name=chooseXorO]:checked") === "X"){
-    return true;
+  if (this.turn){
+    $(".square").append("<p>X</p>");
   } else {
-    return false;
+    $(".square").append("<p>)</p>");
   }
 }
 
@@ -36,8 +36,8 @@ $(document).ready(function(){
     player2.playerName = player2;
   });
 
-  $(".square").click(function(event){
-    if (player1.turn()=== true) {
+  $("button#chooseX").click(function(event){
+    if (player1.turn() === true) {
       $(".XorO1").append("<p>X</p>");
     } else {
       $(".XorO1").append("<p>O</p>");
