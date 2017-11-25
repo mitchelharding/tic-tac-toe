@@ -1,0 +1,18 @@
+.game-box{
+  width: 500px;
+  height: 500px;
+  border: black solid 2px;
+  margin-left: 250px;
+}
+.square1, .square2, .square3, .square4, .square5, .square6{
+  width:166px;
+  height:166px;
+  border: black solid 2px;
+  float: right;
+}
+.square7, .square8, .square9{
+  width:166px;
+  height:166px;
+  border: black solid 2px;
+  float: top-left;
+}
