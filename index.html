@@ -9,9 +9,9 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <form id="tic-tac-toe">
+        <form id="startGame">
 
-          <h1>Enter your names:</h1>
+          <h1>Tic Tac Toe</h1>
 
           <div class="form-group">
             <label for="playerName1">Player1:</label>
@@ -29,18 +29,24 @@
       </div>
 
         <div class="jumbotron">
-          <h2>Player 1: <span class="playerName1"></span><h2>
-          <h2>Player 2: <span class="playerName2"></span><h2>
-          <div class="game-box">
-            <div class="square1"><span class="XorO1"></span></div>
-            <div class="square2"><span class="XorO2"></span></div>
-            <div class="square3"><span class="XorO3"></span></div>
-            <div class="square4"><span class="XorO4"></span></div>
-            <div class="square5"><span class="XorO5"></span></div>
-            <div class="square6"><span class="XorO6"></span></div>
-            <div class="square7"><span class="XorO7"></span></div>
-            <div class="square8"><span class="XorO8"></span></div>
-            <div class="square9"><span class="XorO9"></span></div>
+          <h2>Player 1: <span class="playerName1"></span> is X<h2>
+          <h2>Player 2: <span class="playerName2"></span> is O<h2>
+
+            <label for="chooseXorO">X</label>
+            <input type="checkbox" name="chooseXorO" value="X">
+            <label for="chooseXorO">O</label>
+            <input type="checkbox" name="chooseXorO" value="O">
+
+            <div class="game-box">
+            <div class="square1"><span class="XorO1"></span>1</div>
+            <div class="square2"><span class="XorO2"></span>2</div>
+            <div class="square3"><span class="XorO3"></span>3</div>
+            <div class="square4"><span class="XorO4"></span>4</div>
+            <div class="square5"><span class="XorO5"></span>5</div>
+            <div class="square6"><span class="XorO6"></span>6</div>
+            <div class="square7"><span class="XorO7"></span>7</div>
+            <div class="square8"><span class="XorO8"></span>8</div>
+            <div class="square9"><span class="XorO9"></span>9</div>
           </div>
         </div>
     </div>
